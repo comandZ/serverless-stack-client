@@ -4,7 +4,8 @@ import Home from "./containers/Home";
 import Login from "./containers/Login";
 import Signup from "./containers/Signup";
 import NewNote from "./containers/NewNote";
-// import Notes from "./containers/Notes";
+import Notes from "./containers/Notes";
+import Settings from "./containers/Settings";
 import NotFound from "./containers/NotFound";
 
 export default function Routes() {
@@ -26,9 +27,13 @@ export default function Routes() {
                 <NewNote />
             </Route>
 
-            {/* <Route exact path="/notes/:id">
+            <Route exact path="/notes/:id">
                 <Notes />
-            </Route> */}
+            </Route>
+
+            <Route exact path="/settings">
+                <Settings />
+            </Route>
 
             {/* Finally, catch all unmatched routes */}
             <Route>
